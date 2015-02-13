@@ -1,0 +1,9 @@
+<h1>make a new ticket here. </h1>
+
+<br>
+
+<%= simple_form_for(@ticket, html: { class: 'form-horizontal' }) do |f| %>
+  <%= f.input :title %>
+  <%= f.input :description %>
+  <%= f.submit class: "btn btn-primary" %>
+<% end %>
